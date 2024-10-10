@@ -1,3 +1,7 @@
+*{
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+}
 html,body
 {
     width: 100%;
@@ -5,79 +9,22 @@ html,body
     margin: 0px;
     padding: 0px;
     overflow-x: hidden; 
+    font-family: "Poppins", sans-serif;
 }
-
-.inner-row{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-.background-img{
-    background-color:rgba(255,255,255,0);
-    border-color:rgba(255,255,255,0);
-    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(https://i.postimg.cc/pVBJsgHW/better-foodie-background.jpg);    
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 65vh;
-}
-
-.foodie-logo {
-  display: block;
-  width: 100%;
-  max-width: 72px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 38.3px;
-}
-
-.sec-1-inner-container{
-    display: flex;
-    max-width: 960px;
+.custom-container{
+    max-width: 1100px;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 67.55px;
+    padding-left: 15px;
+    padding-right: 15px;
 }
-
-.sec-1-text-container{
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-}
-
-.sec-1-heading1{
-    font-size: 40px;
-    font-family: Playfair Display, Poppins, Lobster, sans-serif;
-    font-weight: 700;
-    color: #ffffff;
-    margin: 0;
-    padding-bottom: 30px;
-    text-align: center;
-    line-height: 45px;
-}
-
-.sec-1-text1{
-    font-size: 18px;
-    font-family: Poppins, Lobster, sans-serif;
-    font-weight: 400;
-    color: #ffffff;
-    margin: 0;
-    text-align: center;
-    line-height: 31.5px;
-    padding-bottom: 87.55px;
-}
-
-.sec-1-btn {
+.btn {
     background-color: rgb(187, 136, 64);
     border-color: rgb(187, 136, 64);
     color: white;
     border: none;
     border-width: 1px;
     border-radius: 10000px;
-    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-weight: 700;
@@ -93,15 +40,99 @@ html,body
     margin:0 auto;
     cursor: pointer;
   }
-  
-.sec-1-btn:hover {
+.btn:hover {
     opacity: 0.9; 
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s; 
+         -o-transition-duration: 0.2s; 
+            transition-duration: 0.2s;
     background-color:rgb(136,99,47);
     border-color:rgb(136,99,47);
-  }
+}
+/* banner Area  */
+.banner-area{
+    background-color: rgba(255,255,255,0);
+    border-color: rgba(255,255,255,0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url(https://i.postimg.cc/pVBJsgHW/better-foodie-background.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(https://i.postimg.cc/pVBJsgHW/better-foodie-background.jpg);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(https://i.postimg.cc/pVBJsgHW/better-foodie-background.jpg);
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    padding: 130px 0;
+}
+.foodie-logo {
+    display: block;
+    width: 100%;
+    max-width: 100px;
+    margin-bottom: 45px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.banner-content{
+    text-align: center;
+}
+.banner-content h1{
+    font-size: 40px;
+    font-family: Playfair Display, Poppins, Lobster, sans-serif;
+    font-weight: 700;
+    color: #ffffff;
+    margin: 0;
+    padding-bottom: 30px;
+    text-align: center;
+    line-height: 45px;
+}
+.banner-content p {
+    font-size: 18px;
+    font-family: Poppins, Lobster, sans-serif;
+    font-weight: 400;
+    color: #ffffff;
+    margin: auto;
+    text-align: center;
+    max-width: 790px;
+}
+.banner-btn{
+    margin-top: 40px;
+}
+/* About Area  */
+.about-area{
+    padding: 80px 0;
+}
+.about-row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+}
+.about-img{}
+.about-img img{
+    width: 270px;
+}
+.about-text{}
+.about-text span{
+    font-family: "Lobster", sans-serif;
+    color: rgb(187, 136, 64);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 20.25px;
+}
+.about-text h2{
+    font-family: "Playfair Display", sans-serif;
+    font-size: 28px;
+    color: rgb(75, 75, 75);
+    font-weight: 700;
+    line-height: 31.5px;
+}
+.about-text p{
+    color: rgb(107, 107, 107);
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 31.5px;
+}
 
 .food-plate {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     width: 100%;
     min-width: 271px;
@@ -109,6 +140,8 @@ html,body
   }
 
 .sec-2-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     max-width: 960px;
     margin-left: auto;
@@ -117,9 +150,16 @@ html,body
 }
 
 .sec-2-inner-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .sec-2-heading1 {
@@ -143,7 +183,6 @@ html,body
 
 .sec-2-text1 {
     color: rgb(107, 107, 107);
-    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: 400;
     line-height: 31.5px;
@@ -152,25 +191,25 @@ html,body
 }
 
 .sec-3-container{
-    display: block;
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-top: 67.55px;
+    padding-top: 0px;
     padding-bottom: 86.85px;
 }
 
 .sec-3-inner-container{
     display: block;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .splatter-img {
     display: block;
     width: 100%;
-    max-width: 55px;
-    padding-top: 104.05px;
+    max-width: 100px;
     margin: 0 auto;
   }
 
@@ -195,74 +234,24 @@ html,body
     text-align: center;
 }
 
-.sec-3-inner-heading1 {
+.card_wrap h4 {
     display: block;
-    font-family: "Poppins", sans-serif;
     color: rgb(107, 107, 107);
-    padding-top: 48.25px;
+    padding-top: 20px;
     font-size: 18px;
     font-weight: 700;
     line-height: 31.5px;
-    text-align: left;
+    margin: 0;
   }
 
-.sec-3-inner-heading2 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    color: rgb(107, 107, 107);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 31.5px;
-    margin-top: -30px;
-    text-align: center;
-  }
-
-.sec-3-inner-heading3 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    color: rgb(107, 107, 107);
-    font-size: 18px;
-    font-weight: 700;
-    line-height: 31.5px;
-    margin-top: -30px;
-    text-align: right;
-  }
-
-.sec-3-inner-text1 {
+.card_wrap p {
     display: block;
     color: rgb(107, 107, 107);
-    font-family: "Poppins", sans-serif;
     padding-top: 20px;
     font-size: 18px;
     font-weight: 400;
     line-height: 31.5px;
-    width: 30%;
-}
-
-.sec-3-inner-text2 {
-    display: block;
-    color: rgb(107, 107, 107);
-    font-family: "Poppins", sans-serif;
-    padding-left: 120px;
-    margin-top: -125px !important;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 31.5px;
-    margin: 0 auto;
-    width: 30%;
-}
-
-.sec-3-inner-text3 {
-    display: block;
-    color: rgb(107, 107, 107);
-    font-family: "Poppins", sans-serif;
-    padding-left: 745px;
-    margin-top: -125px !important;
-    font-size: 18px;
-    font-weight: 400;
-    line-height: 31.5px;
-    margin: 0 auto;
-    width: 30%;
+    margin: 0;
 }
   
 .sec-4-container{
@@ -270,25 +259,33 @@ html,body
     max-width: 100%;
     margin-left: auto;
     margin-right: auto;
-    padding-top: 67.55px;
+    padding: 70px 0 90px;
 }
 
 .sec-4-inner-container{
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
-    justify-content: center;
-    flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
 }
 
 .background2-img{
     background-color:rgba(255,255,255,0);
     border-color:rgba(255,255,255,0);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.67)), to(rgba(0, 0, 0, 0.67))), url(https://i.postimg.cc/ncRYJBrN/better-foodie-background2.jpg);
+    background-image: -o-linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(https://i.postimg.cc/ncRYJBrN/better-foodie-background2.jpg);
     background-image: linear-gradient(rgba(0, 0, 0, 0.67), rgba(0, 0, 0, 0.67)), url(https://i.postimg.cc/ncRYJBrN/better-foodie-background2.jpg);    
     background-attachment: fixed;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
-    height: 75vh;
 }
 
 .sec-4-heading1 {
@@ -308,7 +305,7 @@ html,body
     font-size: 28px;
     color: rgb(255, 255, 255);
     padding-top: 20px;
-    padding-bottom: 47px;
+    padding-bottom: 25px;
     font-weight: 700;
     line-height: 31.5px;
     text-align: center;
@@ -320,17 +317,14 @@ html,body
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    padding-top: 360px;
-    width: 500px;
-    margin-left: 425px;
+    padding: 50px;
+    height: 100%;
 }
 
 .stars-img {
     display: block;
     max-width: 135px;
     line-height: 24px;
-    padding-left: 57.9px;
-    margin-top: -302.1px;
 }
 
 .inner-column1-text1 {
@@ -338,70 +332,19 @@ html,body
     font-family: "Playfair Display", sans-serif;
     font-size: 18px;
     color: rgb(107, 107, 107);
-    padding-left: 57.9px;
     padding-top: 25px;
     font-weight: 400;
     line-height: 31.5px;
-    width: 75%;
     text-align: left;
 }
 
 .inner-column1-text2 {
     display: block;
-    font-family: "Poppins", sans-serif;
     font-size: 16px;
     color: rgb(107, 107, 107);
-    padding-left: 57.9px;
     padding-top: 25px;
     font-weight: 400;
     line-height: 28px;
-    width: 75%;
-    text-align: left;
-}
-
-.inner-column2 {
-    background-color: white;
-    border-color: white;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    padding-top: 360px;
-    width: 500px;
-    margin-left: 1000px;
-    margin-top: -360px;
-}
-
-.stars-img2 {
-    display: block;
-    max-width: 135px;
-    line-height: 24px;
-    padding-left: 1057.9px;
-    margin-top: -302.1px;
-}
-
-.inner-column2-text1 {
-    display: block;
-    font-family: "Playfair Display", sans-serif;
-    font-size: 18px;
-    color: rgb(107, 107, 107);
-    padding-left: 1057.9px;
-    padding-top: 25px;
-    font-weight: 400;
-    line-height: 31.5px;
-    width: 20%;
-    text-align: left;
-}
-
-.inner-column2-text2 {
-    display: block;
-    font-family: "Poppins", sans-serif;
-    font-size: 16px;
-    color: rgb(107, 107, 107);
-    padding-left: 1057.9px;
-    padding-top: 25px;
-    font-weight: 400;
-    line-height: 28px;
-    width: 75%;
     text-align: left;
 }
 
@@ -412,7 +355,6 @@ html,body
     border: none;
     border-width: 1px;
     border-radius: 10000px;
-    font-family: "Poppins", sans-serif;
     font-size: 18px;
     font-weight: bold;
     font-weight: 700;
@@ -422,17 +364,19 @@ html,body
     text-decoration: none;
     position: relative;
     min-height: 28px;
-    max-width: 580px;
+    max-width: 420px;
     width: 100%;
     display:block;   
     margin:0 auto;
-    margin-top: 100px;
+    margin-top: 70px;
     cursor: pointer;
   }
   
 .sec-4-btn:hover {
     opacity: 0.9; 
-    transition-duration: 0.2s;
+    -webkit-transition-duration: 0.2s; 
+         -o-transition-duration: 0.2s; 
+            transition-duration: 0.2s;
     background-color:rgb(136,99,47);
     border-color:rgb(136,99,47);
   }
@@ -453,7 +397,7 @@ html,body
 .foodie2-logo {
     display: block;
     width: 100%;
-    max-width: 52px;
+    max-width: 75px;
     margin-left: auto;
     margin-right: auto;
     padding-top: 20px;
@@ -462,7 +406,6 @@ html,body
 
 .footer-text {
     display: block;
-    font-family: "Poppins", sans-serif;
     font-size: 14px;
     color: rgb(107, 107, 107);
     font-weight: 400;
@@ -470,666 +413,79 @@ html,body
     margin-top: -55px;
     text-align: center;  
 }
+.footer-text a{
+    color: inherit;
+    text-decoration: none;
+}
 
-/* Mobile Responsiveness - If Smaller than 500px then Run Code Below */
-@media only screen and (max-width: 500px) {
-    .inner-row {
-        flex-direction: column;
-        padding: 10px;
-    }
+.row{
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+}
+.row>div{
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-top: 30px;
+}
+.col-6{
+    max-width: 50%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 50%;
+            flex: 0 0 50%;
+}
+.col-4{
+    max-width: 33.33%;
+    -webkit-box-flex: 0;
+        -ms-flex: 0 0 33.33%;
+            flex: 0 0 33.33%;
+}
 
-    .background-img, .background2-img {
-        height: auto !important;
-        background-attachment: scroll;
-    }
-
-    .background2-img {
-        height: 105vh !important;
-    }
-
-    .foodie-logo {
-        max-width: 50px;
-        padding-top: 20px;
-    }
-
-    .sec-1-inner-container {
-        max-width: 100%;
-        padding: 10px;
-    }
-
-    .sec-1-heading1 {
-        font-size: 24px;
-        line-height: 32px;
-        padding-bottom: 15px;
-    }
-
-    .sec-1-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 30px;
-    }
-
-    .sec-1-btn, .sec-4-btn {
-        max-width: 100%;
-        font-size: 16px;
-        padding: 12px;
-    }
-
-    .food-plate {
-        width: 100%;
-        min-width: 150px;
-        padding-top: 30px;
-    }
-
-    .sec-2-heading1, .sec-2-heading2, .sec-2-text1 {
-        padding: 20px !important;
-    }
-
-    .sec-2-heading1 {
-        font-size: 18px;
-        padding-top: 20px;
-    }
-
-    .sec-2-heading2 {
-        font-size: 22px;
-    }
-
-    .sec-2-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        width: 100%;
-    }
-
-    .sec-3-heading2 {
-        padding: 10px;
-    }
-
-    .sec-3-inner-heading1, .sec-3-inner-heading2, .sec-3-inner-heading3 {
-        font-size: 12px !important;
-    }
-
-    .sec-3-inner-text1, .sec-3-inner-text2, .sec-3-inner-text3 {
-        text-align: center;
-        font-size: 12px !important;
-        margin-top: 15px !important;
-    }
-
-    .sec-3-inner-text1, .sec-3-inner-text2, .sec-3-inner-text3 {
-        width: 100% !important;
-        margin-left: 0 !important;
-        padding-top: 10px;
-    }
-
-    .sec-3-inner-text1 {
-        margin-right: 10px !important;
-    }
-
-    .sec-3-inner-text2 {
-        padding-left: 170px !important;
-    }
-
-    .sec-3-inner-text3 {
-        margin-left: -170px !important;
-    }
-
-    .sec-4-heading1, .sec-4-heading2 {
-        font-size: 22px;
-    }
-
-    .sec-4-heading2 {
-        padding: 20px;
-    }
-
-    .inner-column1, .inner-column2 {
-        padding-top: 250px !important;
-        width: 60% !important;
-        margin-left: 100px !important;
-    }
-
-    .stars-img, .stars-img2 {
-        max-width: 80px;
-        padding-top: 50px;
-    }
-
-    .stars-img2, .inner-column2-text1, .inner-column2-text2 {
-        margin-left: -60px !important;
-        margin-bottom: -10px !important;
-    }
-
-    .inner-column1-text1, .inner-column2-text1 {
-        font-size: 14px;
-    }
-
-    .inner-column2-text1 {
-        width: 45% !important;
-    }
-
-    .inner-column1-text2, .inner-column2-text2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .sec-4-btn {
-        margin-top: 30px !important;
-        width: 100%;
-        text-align: center;
+/* Desktops, Large screens (if smaller than 1200px and between 992px then run code)*/
+@media (min-width: 992px) and (max-width: 1199.98px){
+    .custom-container{
+        max-width: 960px;
     }
 }
 
-
-/* Desktops, Large screens (if smaller than 1200px then run code)*/
-@media only screen and (max-width:1200px){
-    .inner-row {
-        flex-direction: column;
-        padding: 10px;
+/* Tablets (if smaller than 992px and between 768px then run code)*/
+@media (min-width: 768px) and (max-width: 991.98px){
+    .custom-container{
+        max-width: 740px;
     }
+}
 
-    .background-img {
-        height: 50vh;
-        background-attachment: scroll;
-    }
-
-    .background2-img {
-        height: 120vh;
-        background-attachment: scroll;
-    }
-
-    .foodie-logo {
-        max-width: 50px;
-        padding-top: 20px;
-    }
-
-    .sec-1-inner-container {
-        max-width: 100%;
-        padding-left: 100px;
-        padding-right: 10px;
-    }
-
-    .sec-1-heading1 {
-        font-size: 28px;
-        line-height: 35px;
-        padding-bottom: 20px;
-    }
-
-    .sec-1-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 50px;
-    }
-
-    .sec-1-btn, .sec-4-btn {
-        max-width: 300px;
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .food-plate {
-        width: 100%;
-        min-width: 200px;
-        padding-top: 50px;
-        margin-left: 20px;
-    }
-
-    .sec-2-heading1, .sec-2-heading2, .sec-2-text1 {
-    }
-
-    .sec-2-heading1 {
-        font-size: 16px;
-        padding-top: 30px;
-    }
-
-    .sec-2-heading2 {
-        font-size: 22px;
-    }
-
-    .sec-2-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        width: 90%;
-    }
-
-    .sec-3-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .sec-3-inner-heading1, .sec-3-inner-heading2, .sec-3-inner-heading3 {
-    }
-
-    .sec-3-inner-heading2 {
-    }
-
-    .sec-3-inner-heading3 {
-    }
-
-    .sec-3-inner-text1, .sec-3-inner-text2, .sec-3-inner-text3 {
-        width: 100%;
-        text-align: center;
-        margin-top: 20px !important;
-        padding-left: 0;
-    }
-
-    .sec-3-inner-text1 {
-        width: 30% !important;
-        margin-left: -25px !important;
-    }
-
-    .sec-3-inner-text2 {
-        width: 30% !important;
-        margin-top: -125px !important;
-    }
-
-    .sec-3-inner-text3 {
-        width: 30% !important;
-        padding-left: 700px !important;
-        margin-top: -125px !important;
-    }
-
-    .sec-4-heading1, .sec-4-heading2 {
-        font-size: 24px;
-    }
-
-    .sec-4-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
+/* Desktops, Large screens (if smaller than 992px then run code)*/
+@media (max-width: 991.98px){
     .inner-column1 {
-        padding-top: 260px;
-        width: 325px;
-        margin-left: 420px;
-    }
-
-    .stars-img {
-        max-width: 100px;
-        padding-top: 70px;
-    }
-
-    .inner-column1-text1 {
-        font-size: 14px;
-    }
-
-    .inner-column1-text2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .inner-column2 {
-        padding-top: 260px;
-        padding-bottom: 50px;
-        width: 325px;
-        margin-left: 420px;
-        margin-top: 50px;
-    }
-
-    .stars-img2 {
-        max-width: 100px;
-        padding-left: 197.9px;
-        padding-top: 10px;
-        margin-left: 270px;
-    }
-
-    .inner-column2-text1 {
-        width: 20%;
-        font-size: 14px;
-        padding-left: 197.9px;
-        margin-left: 270px;
-    }
-
-    .inner-column2-text2 {
-        font-size: 15px;
-        padding-left: 197.9px;
-        margin-left: 270px;
-
-    }
-
-    .sec-4-btn {
-        margin-top: 120px !important;
+        padding: 30px;
     }
 }
 
-/* Laptops, Small screens (if smaller than 1024px then run code)*/
-@media only screen and (max-width:1024px){
-    .inner-row {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .background-img {
-        height: 40vh;
-        background-attachment: scroll;
-    }
-
-    .background2-img {
-        height: 110vh;
-        background-attachment: scroll;
-    }
-
-    .foodie-logo {
-        max-width: 50px;
-        padding-top: 20px;
-    }
-
-    .sec-1-inner-container {
+/* Mobile (if smaller than 576px then run code)*/
+@media (max-width: 575.98px){
+    .col-6,
+    .col-4{
         max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
+        -webkit-box-flex: 0;
+            -ms-flex: 0 0 100%;
+                flex: 0 0 100%;
     }
-
-    .sec-1-heading1 {
-        font-size: 28px;
-        line-height: 35px;
-        padding-bottom: 20px;
-    }
-
-    .sec-1-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 50px;
-    }
-
-    .sec-1-btn, .sec-4-btn {
-        max-width: 300px;
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .food-plate {
-        width: 100%;
-        min-width: 150px;
-        padding-top: 50px;
-        margin-left: 20px;
-    }
-
-    .sec-2-heading1, .sec-2-heading2, .sec-2-text1 {
-    }
-
-    .sec-2-heading1 {
-        font-size: 16px;
-        padding-top: 30px;
-    }
-
-    .sec-2-heading2 {
-        font-size: 22px;
-    }
-
-    .sec-2-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        width: 80%;
-    }
-
-    .sec-3-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .sec-3-inner-heading1, .sec-3-inner-heading2, .sec-3-inner-heading3 {
-    }
-
-    .sec-3-inner-heading2 {
-    }
-
-    .sec-3-inner-heading3 {
-    }
-
-    .sec-3-inner-text1, .sec-3-inner-text2, .sec-3-inner-text3 {
-        width: 100%;
+    .about-row{
+        display: block;
         text-align: center;
-        margin-top: 20px !important;
-        padding-left: 0;
     }
-
-    .sec-3-inner-text1 {
-        width: 30% !important;
+    .card_wrap{
+        text-align: center;
     }
-
-    .sec-3-inner-text2 {
-        width: 30% !important;
+    .banner-area {
+        padding: 70px 0;
     }
-
-    .sec-3-inner-text3 {
-        width: 30% !important;
-    }
-
-    .sec-4-heading1, .sec-4-heading2 {
-        font-size: 24px;
-    }
-
-    .sec-4-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .inner-column1 {
-        padding-top: 260px;
-        width: 325px;
-        margin-left: 340px;
-    }
-
-    .stars-img {
-        max-width: 100px;
-        padding-top: 70px;
-    }
-
-    .inner-column1-text1 {
-        font-size: 14px;
-    }
-
-    .inner-column1-text2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .inner-column2 {
-        padding-top: 260px;
-        padding-bottom: 50px;
-        width: 325px;
-        margin-left: 340px;
-        margin-top: 50px;
-    }
-
-    .stars-img2 {
-        max-width: 100px;
-        padding-left: 117.9px;
-        padding-top: 10px;
-        margin-left: 270px;
-    }
-
-    .inner-column2-text1 {
-        width: 25%;
-        font-size: 14px;
-        padding-left: 117.9px;
-        margin-left: 270px;
-    }
-
-    .inner-column2-text2 {
-        font-size: 15px;
-        padding-left: 117.9px;
-        margin-left: 270px;
-
-    }
-
     .sec-4-btn {
-        margin-top: 120px !important;
+        margin-top: 40px;
     }
 }
-
-/* iPads, Tablets (if smaller than 768px then run code)*/
-@media only screen and (max-width:768px){
-    .inner-row {
-        flex-direction: column;
-        padding: 10px;
-    }
-
-    .background-img {
-        height: 60vh;
-        background-attachment: scroll;
-    }
-
-    .background2-img {
-        height: 150vh;
-        background-attachment: scroll;
-    }
-
-    .foodie-logo {
-        max-width: 50px;
-        padding-top: 20px;
-    }
-
-    .sec-1-inner-container {
-        max-width: 100%;
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .sec-1-heading1 {
-        font-size: 28px;
-        line-height: 35px;
-        padding-bottom: 20px;
-    }
-
-    .sec-1-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        padding-bottom: 50px;
-    }
-
-    .sec-1-btn, .sec-4-btn {
-        max-width: 300px;
-        font-size: 16px;
-        padding: 12px 20px;
-    }
-
-    .food-plate {
-        width: 100%;
-        min-width: 150px;
-        padding-top: 50px;
-        margin-left: 20px;
-    }
-
-    .sec-2-heading1, .sec-2-heading2, .sec-2-text1 {
-    }
-
-    .sec-2-heading1 {
-        font-size: 16px;
-        padding-top: 30px;
-    }
-
-    .sec-2-heading2 {
-        font-size: 22px;
-    }
-
-    .sec-2-text1 {
-        font-size: 16px;
-        line-height: 24px;
-        width: 80%;
-    }
-
-    .sec-3-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .sec-3-inner-heading1, .sec-3-inner-heading2, .sec-3-inner-heading3 {
-    }
-
-    .sec-3-inner-heading1 {
-        padding-left: 20px !important;
-    }
-
-    .sec-3-inner-heading2 {
-
-    }
-
-    .sec-3-inner-heading3 {
-        padding-right: 20px !important;
-    }
-
-    .sec-3-inner-text1, .sec-3-inner-text2, .sec-3-inner-text3 {
-        margin-top: 20px !important;
-    }
-
-    .sec-3-inner-text1 {
-        width: 30% !important;
-        padding-left: 40px !important;
-    }
-
-    .sec-3-inner-text2 {
-        width: 30% !important;
-        padding-top: 0px;
-        margin-top: -155px !important;
-    }
-
-    .sec-3-inner-text3 {
-        width: 30% !important;
-        padding-top: 0px;
-        padding-left: 500px !important;
-        margin-top: -160px !important;
-    }
-
-    .sec-4-heading1, .sec-4-heading2 {
-        font-size: 24px;
-    }
-
-    .sec-4-heading2 {
-        padding-left: 10px;
-        padding-right: 10px;
-    }
-
-    .inner-column1 {
-        padding-top: 260px;
-        width: 325px;
-        margin-left: 200px;
-    }
-
-    .stars-img {
-        max-width: 100px;
-        padding-top: 70px;
-    }
-
-    .inner-column1-text1 {
-        font-size: 14px;
-    }
-
-    .inner-column1-text2 {
-        font-size: 15px;
-        margin-bottom: 10px;
-    }
-
-    .inner-column2 {
-        padding-top: 260px;
-        padding-bottom: 100px;
-        width: 325px;
-        margin-left: 200px;
-        margin-top: 50px;
-    }
-
-    .stars-img2 {
-        max-width: 100px;
-        padding-left: 217.9px;
-        padding-top: 0px;
-        margin-left: 40px;
-    }
-
-    .inner-column2-text1 {
-        width: 32%;
-        font-size: 14px;
-        padding-left: 217.9px;
-        margin-left: 40px;
-    }
-
-    .inner-column2-text2 {
-        font-size: 15px;
-        padding-left: 217.9px;
-        margin-left: 40px;
-
-    }
-
-    .sec-4-btn {
-        margin-top: 90px !important;
-    }
-}
-
-
-
