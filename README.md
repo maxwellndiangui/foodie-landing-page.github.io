@@ -1,6 +1,6 @@
 # Introduction to Foodie Landing Page
 
-[![](https://github.com/maxwellndiangui/Foodie-Landing-Page/blob/main/img/Foodie%20Site%20SS.png)](https://maxwellndiangui.github.io/foodie-landing-page.github.io/)
+[![](https://github.com/maxwellndiangui/Foodie-Landing-Page/blob/main/img/5.png)](https://maxwellndiangui.github.io/foodie-landing-page.github.io/)
 
 ## Description
 
