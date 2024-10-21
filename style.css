@@ -97,7 +97,9 @@ html,body
 }
 /* About Area  */
 .about-area{
-    padding: 80px 0;
+    padding-top: 80px;
+    padding-bottom: 55px;
+    border-bottom: 2px solid rgb(223, 223, 223);
 }
 .about-row{
     display: -webkit-box;
@@ -443,6 +445,16 @@ html,body
     -webkit-box-flex: 0;
         -ms-flex: 0 0 33.33%;
             flex: 0 0 33.33%;
+}
+
+/* For in between Media Queries - Adjust based on Developer tools*/
+@media (min-width: 543px) and (max-width: 760px){
+    .custom-container{
+        max-width: 580px;
+    }
+    .sec-3-inner-container {
+        padding-left: 20px;
+    }
 }
 
 /* Desktops, Large screens (if smaller than 1200px and between 992px then run code)*/
